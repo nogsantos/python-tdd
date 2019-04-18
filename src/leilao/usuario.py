@@ -7,5 +7,5 @@ class Usuario:
         self.__nome = nome
 
     @property
-    def nome(self):
+    def nome(self) -> str:
         return self.__nome

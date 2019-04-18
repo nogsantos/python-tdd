@@ -10,9 +10,9 @@ class Lance:
         self.__valor = valor
 
     @property
-    def usuario(self):
+    def usuario(self) -> Usuario:
         return self.__usuario
 
     @property
-    def valor(self):
+    def valor(self) -> float:
         return self.__valor

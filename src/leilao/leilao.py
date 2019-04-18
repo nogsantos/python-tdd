@@ -9,13 +9,13 @@ class Leilao:
         self.__lances = []
 
     @property
-    def descricao(self):
+    def descricao(self) -> str:
         return self.__descricao
 
     @property
-    def lances(self):
+    def lances(self) -> list:
         # devolve uma cópia rasa da lista
         return self.__lances[:]
 
-    def propoe(self, lance: Lance):
+    def propoe(self, lance: Lance) -> None:
         self.__lances.append(lance)
